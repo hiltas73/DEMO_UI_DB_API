@@ -1,23 +1,22 @@
-package com.library.steps;
+package com.demo.steps;
 
+import com.demo.pages.*;
+import com.demo.utility.*;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
+import io.restassured.specification.RequestSpecification;
+import org.junit.Assert;
 
-import com.library.pages.*;
-import com.library.utility.*;
-import io.cucumber.java.en.*;
-import io.restassured.*;
-import io.restassured.http.*;
-import io.restassured.path.json.*;
-import io.restassured.response.*;
-import io.restassured.specification.*;
-import org.apiguardian.api.API;
-import org.junit.*;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
-import org.hamcrest.Matchers;
-
-
-import java.util.*;
-
-import static io.restassured.path.json.JsonPath.given;
 import static org.hamcrest.Matchers.*;
 
 public class APIStepDefs {

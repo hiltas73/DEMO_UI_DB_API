@@ -1,4 +1,4 @@
-package com.example.runners;
+package com.demo.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;

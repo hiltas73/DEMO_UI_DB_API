@@ -1,7 +1,7 @@
-package com.library.pages;
+package com.demo.pages;
 
-import com.library.utility.ConfigurationReader;
-import com.library.utility.Driver;
+import com.demo.utility.ConfigurationReader;
+import com.demo.utility.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
