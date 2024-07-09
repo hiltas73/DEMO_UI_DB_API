@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 
     public LoginPage() {
-        PageFactory.initElements(Driver.getDriver(), this);
+        PageFactory.initElements(Driver.get(), this);
     }
 
     @FindBy(id = "inputEmail")
@@ -26,7 +26,7 @@ public class LoginPage {
 
     public void login(String userType){
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("library_url"));
+        Driver.get().get(ConfigurationReader.getProperty("library_url"));
 
         String username= ConfigurationReader.getProperty(userType+"_username");
         String password=ConfigurationReader.getProperty(userType+"_password");
