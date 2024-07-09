@@ -14,7 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 public abstract  class BasePage {
 
     public BasePage() {
-        PageFactory.initElements(Driver.getDriver(), this);
+        PageFactory.initElements(Driver.get(), this);
     }
 
 
@@ -33,6 +33,6 @@ public abstract  class BasePage {
     }
 
     public void navigateModule(String moduleName){
-        Driver.getDriver().findElement(By.xpath("//span[@class='title'][.='"+moduleName+"']")).click();
+        Driver.get().findElement(By.xpath("//span[@class='title'][.='"+moduleName+"']")).click();
     }
 }
