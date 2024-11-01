@@ -1,14 +1,10 @@
 package com.demo.utility;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
-import java.net.URL;
 import java.time.Duration;
 
 public class Driver {
@@ -36,7 +32,7 @@ public class Driver {
             We will read our browserType from configuration.properties file.
             This way, we can control which browser is opened from outside our code.
              */
-            String browserType = ConfigurationReader.getProperty("browser");
+            String browserType = System.getProperty("browser") != null ? System.getProperty("browser") : ConfigurationReader.getProperty("browser");
 
             /*
             Depending on the browserType returned from the configuration.properties
