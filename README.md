@@ -13,8 +13,7 @@ This project demonstrates a Behavior-Driven Development (BDD) approach using Cuc
 - [Setup Instructions](#setup-instructions)
 - [Running Tests](#running-tests)
 - [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Author](#author)
 
 ## Features
 
