@@ -1,4 +1,4 @@
-```markdown
+
 # BDD Cucumber Java Selenium Project
 
 ## Overview
@@ -34,33 +34,42 @@ This project demonstrates a Behavior-Driven Development (BDD) approach using Cuc
 
 ## Project Structure
 
-```
 /src
+
 /main
+
 /java
+
 /com
+
 /demo
+
 /pages         # Page Object Model classes
+
 /runners
+
 /steps         # Step definitions for Cucumber
+
 /utility       # Utility classes
+
 /resources
+
 /features      # Cucumber feature files
-```
 
 ## Setup Instructions
 
 1. **Clone the repository**:
-   ```
+´´´javascript
 git clone https://github.com/hiltas73/DEMO_UI_DB_API
 cd your-repo-name
-   ```
+´´´
 
 2. **Install dependencies**:
    Make sure you have Maven installed, then run:
-   ```
+   
+```
 mvn install
-   ```
+```
 
 3. **Configure MySQL Connection**:
    Update the MySQL connection settings in the `config.properties` file located in the `src/test/resources` directory.
@@ -72,7 +81,7 @@ mvn install
 
 To run the tests, use the following command:
 
-```
+```javascript
 mvn test
 ```
 
@@ -98,4 +107,3 @@ Open a pull request.
 
 hiltas73 - [hiltas73](https://www.linkedin.com/in/halim-iltas/)
 
-```
