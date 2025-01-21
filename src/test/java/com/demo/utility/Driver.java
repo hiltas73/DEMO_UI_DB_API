@@ -24,7 +24,7 @@ public class Driver {
     Create a re-usable utility method which will return the same driver instance once we call it.
     - If an instance doesn't exist, it will create first, and then it will always return same instance.
      */
-    public static WebDriver get(){
+    public static WebDriver getDriver(){
 
         if(driverPool.get() == null){
 
