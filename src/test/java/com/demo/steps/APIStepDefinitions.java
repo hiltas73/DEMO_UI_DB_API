@@ -19,7 +19,7 @@ import java.util.Map;
 
 import static org.hamcrest.Matchers.*;
 
-public class APIStepDefs {
+public class APIStepDefinitions {
 
     RequestSpecification givenPart;
     ValidatableResponse thenPart;

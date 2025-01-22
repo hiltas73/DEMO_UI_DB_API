@@ -3,7 +3,6 @@ Feature: Login feature
   Background:
     Given I am on the login page
 
-
   @librarian
   Scenario: Login as a librarian
     When I login as a librarian
@@ -13,7 +12,6 @@ Feature: Login feature
   Scenario: Login as a student
     When I login as a student
     Then books should be displayed
-
 
   @librarianParam
   Scenario: Login as librarian 49
