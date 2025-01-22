@@ -12,5 +12,7 @@ Feature: As a librarian, I want to retrieve all users
     And Each "name" field should not be null
 
 
-
-
+  @student
+  Scenario: Login as a student
+    When I login as a student
+    Then books should be displayed
