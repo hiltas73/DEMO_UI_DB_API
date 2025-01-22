@@ -1,8 +1,7 @@
 Feature: As a librarian, I want to retrieve all users
 
-
   Scenario: Retrieve all users from the API endpoint
-
+    @api
     Given I logged Library api as a "librarian"
     And Accept header is "application/json"
     When I send GET request to "/get_all_users" endpoint

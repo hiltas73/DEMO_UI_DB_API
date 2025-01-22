@@ -17,6 +17,8 @@ public abstract  class BasePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+    @FindBy(linkText = "Users")
+    public WebElement usersLink;
 
     @FindBy(tagName = "h3")
     public WebElement pageHeader;
