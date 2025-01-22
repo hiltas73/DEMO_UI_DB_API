@@ -30,7 +30,7 @@ This project demonstrates a Behavior-Driven Development (BDD) approach using Cuc
 - **Cucumber**: For writing BDD-style test scenarios and test cases.
 - **MySQL**: For database connectivity and validations.
 - **RestAssured**: For API testing.
-- **JUnit**: For running tests and reporting.
+- **JUnit**: For running tests and assertions.
 
 ## Project Structure
 
